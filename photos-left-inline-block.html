@@ -14,9 +14,6 @@
 			text-align: center;
 			/* Force the page to be at least 100% tall */
 			min-height: 100vh;
-			/* Overflow hidden needed so floated children will be forced to tell how tall they are to the parent gallery */
-			/* Float will also work, but gallery doesn't need to float */
-			overflow: hidden;
 		}
 
 		img{
@@ -24,18 +21,18 @@
 			max-width: 100%;
 		}
 
+		#left, #right{
+			display: inline-block;
+		}
+
 		#left{
 			/* Make the div 20% the width of the parent */
 			width: 20%;
-			/* Make the div go all the way to the left of the parent. It no longer acknowledges non-floated elements */
-			float: left;
 		}
 
 		#right{
 			/* Make the div 60% the width of the parent */
 			width: 60%;
-			/* Make the div go all the way to the left of the parent. It no longer acknowledges non-floated elements */
-			float: left;
 		}
 
 	</style>
